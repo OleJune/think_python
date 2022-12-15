@@ -1,6 +1,13 @@
 import time
 seconds = time.time()
-days = seconds//(60*60*24)
-local_time = time.strftime('%H:%M:%S')
-print('Current local time is', local_time)
+minutes = seconds/60
+hours = minutes/60
+days = hours/24
+current_hrs = hours % 24
+current_min = minutes % 60
+current_sec = seconds % 60
+sign = ':'
+
 print(int(days), 'days since the epoch')
+
+print(str(int(current_hrs))+sign+str(int(current_min))+sign+str(int(current_sec)), 'GMT')
