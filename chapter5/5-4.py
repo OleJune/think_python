@@ -1,6 +1,10 @@
 def recurse(n, s):
 	"""
-	Prints the value of 's' when 'n == 0'.
+	Calculates and prints the value of argument2 (s) after calling itself 
+	until it reaches the base case where argument1 (n) equals 0.
+
+	# or: The function calls itself until argument1 (n) equals 0
+	#		and then returns the value of argument2 (s).
 
 	Parameters:
 		n: positive int
